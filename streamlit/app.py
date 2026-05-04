@@ -2,8 +2,10 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load("stress_model.pkl")
+import os
 
+model_path = os.path.join(os.path.dirname(__file__), "stress_model.pkl")
+model = joblib.load(model_path)
 st.title("🧠 Stress Detection System")
 st.write("Predict stress level using wearable sensor data")
 
