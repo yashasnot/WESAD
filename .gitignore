@@ -1,0 +1,7 @@
+*.csv
+*.zip
+*.pkl
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+catboost_info/
